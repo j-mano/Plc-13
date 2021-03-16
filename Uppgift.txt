@@ -1,0 +1,19 @@
+Uppgift  
+Ladda ner garagedörren nedan och designa ett program i CoDeSys som uppfyller funktionsbeskrivningen. Använd programspråket sequential function chart (SFC).
+
+Systemöversikt  
+A motor is connected to the door and commanded with a reversing contactor. MotorForward and MotorReverse PLC outputs are connected to the contactor to open and close the door respectively. The door has two sensors connected to “SensorClose” and “SensorOpen” inputs to know when the door is completely closed and open.
+
+There is a pushbutton on a HMI panel connected to input “PushButton”. A light beacon is connected to the output “TopLight”.
+
+Funktionsbeskrivning 
+When the button is pressed the door should open while the light blinks: ON T#500ms and OFF T#500ms continuously. Once the door is open the light is ON for 5 seconds. The door close again while the light blinks: ON T#500ms and OFF T#500ms continuously. When the door is closed the light is off.
+
+Leverans
+Programmet designas i CoDeSys och du laddar upp programfilen enligt syntax:
+
+"ditt efternamn, ditt förnamn, uppgift 13.project"
+
+Ex: "Jansson, Jan uppgift13.project"
+
+Obs! CoDeSys skapar filer i projektmappen. Se till att du väljer rätt fil bland dessa.
